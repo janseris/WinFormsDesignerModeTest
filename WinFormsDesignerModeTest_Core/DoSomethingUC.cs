@@ -1,8 +1,6 @@
-﻿using System;
-using System.ComponentModel;
-using System.Windows.Forms;
+﻿using System.ComponentModel;
 
-namespace WinFormsDITest
+namespace WinFormsDesignerModeTest_Core
 {
     public partial class DoSomethingUC : UserControl
     {
@@ -23,6 +21,7 @@ namespace WinFormsDITest
             service = DIContainer.Get<Service>();
             if (designMode == false)
             {
+                //throw new InvalidOperationException($"Designer entered code which was not supposed to be entered in design mode and UsageMode was {LicenseManager.UsageMode}!");
                 service.DidSomething += Service_DidSomething;
             }
         }
