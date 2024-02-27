@@ -17,10 +17,8 @@ namespace WinFormsDITest
             IHostBuilder hostBuilder = Host.CreateDefaultBuilder();
             hostBuilder.ConfigureServices((context, services) =>
             {
-                services.AddSingleton<MainWindow>(); //register recipe to how the instance is created and that there is only 1 instance required and must then be reused (=> call default constructor)
-
-                //Why is this required if UserControl does not use constructor injection?
-                services.AddTransient(provider => new Lazy<MainWindow>(provider.GetRequiredService<MainWindow>));
+                services.AddSingleton<Service>();
+                services.AddSingleton<MainWindow>();
             });
 
             var host = hostBuilder.Build();
