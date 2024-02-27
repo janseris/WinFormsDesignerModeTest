@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsDesignerModeTest", "WinFormsDITest\WinFormsDesignerModeTest.csproj", "{9C94B8CF-9FF0-49C6-AFD5-E97319953758}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsDesignerModeTest", "WinFormsDesignerModeTest\WinFormsDesignerModeTest.csproj", "{9C94B8CF-9FF0-49C6-AFD5-E97319953758}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
